@@ -1,0 +1,171 @@
+/*IMPORTANDO FONTES COM GOOGLEFONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+
+/*DECLARANDO ATRIBUTOS PADRÕES(FONTES E CORES*/
+:root {
+    --font2:'WindSong', cursive;
+    --font1:'Bodoni Moda', serif;
+    --cor1: #4A705B;
+    --cor2: #435963;
+    --cor3: #C6D5B4;
+    --cor4: #7F8D94;
+  }
+
+/*DECLARANDO PROPRIEDADES DA PAGINA*/
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: var(--font1);
+    background-color: var(--cor2);
+}
+
+
+/*DECLARANDO PROPRIEDADES DO CABEÇALHO*/
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font2);
+    font-size: x-large;
+    background-color: var(--cor1);
+    padding: 0.8rem;
+    padding-bottom: 0px;
+}
+
+
+/*DECLARANDO PROPRIEDADES DO FORMULARIO*/
+#formulario{
+  width: 100%;
+  color: var(--cor3);
+  background-color: var(--cor2);
+  margin: 0.8rem auto;
+  text-align: center;
+  font-size: large;
+}
+
+
+/*DECLARANDO PROPRIEDADES DOS TITULOS*/
+h1{
+  margin: 0px;
+}
+
+
+/*DECLARANDO PROPRIEDADES DO LOGO NO FORMULARIO*/
+.logo-formulario{
+  display:flex;
+  width: 35%;
+  margin: auto;
+  margin-top: 0.5rem; 
+}
+
+
+/*DECLARANDO PROPRIEDADES DAS LINHAS*/
+.row{
+    color: var(--cor3);
+    background-color: var(--cor4);
+    width: 80%;
+    margin: 1rem auto;
+    font-size: x-large;
+    border-radius: 4px; 
+    height: fit-content;  
+  }
+
+
+/*DECLARANDO PROPRIEDADES DOS INPUTS*/
+input{
+  width: 80%;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--cor4);
+  box-sizing: border-box;
+}
+
+
+/*DECLARANDO PROPRIEDADES DOS INPUTS*/
+.row input::placeholder{
+      font-size: small;
+      color: var(--cor3);    
+}
+
+
+/*DECLARANDO PROPRIEDADES DOS INPUTS TIPOS BOTÕES*/
+button, .botao{
+  width: 60%;
+  background-color: var(--cor1);
+  color: var(--cor3);
+  border-radius: 4px;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+  font-family: var(--font1);
+}  
+
+
+/*DECLARANDO PROPRIEDADES DOS LINKS*/
+ a{
+    color: var(--cor3);
+}
+
+
+/*DECLARANDO PROPRIEDADES DO BOX LOGAR COM REDES*/
+.fagmin{
+  width: 80%;
+  font-size: large;
+  margin: 1.5rem auto;
+  background-color: rgba(127, 141, 148, 0.5);
+  border: 1px solid var(--cor3);
+  border-radius:4px;
+}
+/*DECLARANDO PROPRIEDADES DO TEXTO DENTRO BOX LOGAR COM REDES*/
+.fagmin>p{
+  margin: 0px;
+}
+/*DECLARANDO PROPRIEDADES DO TEXTO ACIMA DA MARGEM DO BOX LOGAR COM REDES*/
+.fagmin>p:first-child{
+  margin: auto;
+  margin-top: -1rem; 
+  background-color: var(--cor2); 
+  width: 20%;
+  border-radius: 4px;
+}
+/*DECLARANDO PROPRIEDADES DA CAIXA DE ICONES DENTRO BOX LOGAR COM REDES*/
+.icons-redes{
+  margin-bottom: 0.2rem;
+  color:var(--cor2);
+}
+
+/*DECLARANDO PROPRIEDADES DOS ICONES DENTRO BOX LOGAR COM REDES*/
+.icons-redes>span{
+  box-sizing: border-box;
+  padding: 0.6rem;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: x-large;
+}
+/*DECLARANDO PROPRIEDADES DO HOVER NOS ICONES DENTRO BOX LOGAR COM REDES*/
+.icons-redes>span:hover{
+  cursor:pointer;
+  color:var(--cor1);
+}
+
+@media(min-width:820px){
+  .logo-formulario{
+    margin:auto;
+  }
+
+  #conteudo{
+    margin:auto;
+    display:flex;
+    max-width:1200px;
+  }
+
+
+  #formulario{
+    width: 40%;
+  }
+
+  .cabecalho{
+    justify-content: space-evenly;
+}
+}

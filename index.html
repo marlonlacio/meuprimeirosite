@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merakipng Store</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<!--COMEÇO DA PAGINA-->
+  <!--COMEÇO DO CABEÇALHO DA PAGINA-->
+    <header class="cabecalho">
+      <!--COMEÇO DO MENU NO CABEÇALHO DA PAGINA-->
+        <nav>   
+        <!--COMEÇO DO BOTÃO DO LADO DIREITO NO MENU DO CABEÇALHO-->                
+            <a href="#">
+              <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
+              <span>
+                <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
+                <i class="fa fa-home"></i>
+              </span>
+            </a>
+        </nav>             
+        <!--LOGO NO CABEÇALHO DA PAGINA-->
+        <div id="logo-cabecalho" ></div>
+          Nome do site
+         </div>
+    </header>
+  <!--FINAL DO CABEÇALHO DA PAGINA-->
+              <!---->
+  <!--COMEÇO DO CONTEUDO DA PAGINA-->
+    <div id="conteudo">
+                <!--LOGO NO TOPO DO FORMULÁRIO--> 
+                <img src="https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_1280.png" alt="" class="logo-formulario" >
+      <!--COMEÇO DO FORMULARIO DE LOGIN-->
+        <form id="formulario" method="POST" action="">
+
+          <!--TEXTO ABAIXO DA LOGO-->
+            <h1>Login</h1>
+            <!--INPUT USUARIO-USUARIO-->
+            <div class="row">
+                <label for="login_username">
+                    <span style="color: var(--cor3);">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </label>
+                <input autocomplete="username" type="text" name="username" id="login_username" placeholder="usuário" >
+            </div>
+            <!--INPUT USUARIO-SENHA-->
+            <div class="row">
+                <label for="senha">
+                    <span style="color: var(--cor3);">
+                        <i class="fas fa-lock" ></i>
+                    </span>
+                </label>
+                <input type="password" name="senha" id="senha" placeholder="senha">
+            </div>
+            <!--INPUT USUARIO-RECUPERAR-SENHA-->
+            <a href="" style="color: var(--cor4); font-size: small;">Esqueceu a senha?</a>
+            <br>
+
+            <!--INPUT USUARIO-SENHA-SUBMIT-->
+            <button>
+            <input type="submit" value="Entrar" class="botao">
+            </input>
+            </button>
+          <!--INPUT USUARIO-LOGAR-COM-->         
+          <div class="fagmin">
+            <!--TEXTO-LOGAR-COM-->
+            <p> OU 
+            </p>
+            <p>Logar com:
+            </p>
+            <!--INPUT USUARIO-REDES-->
+            <div class="icons-redes">
+              <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
+              <span>
+                <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
+                <i class="fab fa-facebook-f"></i>
+                </span>
+                <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
+                <span>
+                <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
+                <i class="fas fa-envelope"></i>
+                </span>
+                <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
+              <span>
+                <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
+               <i class="fab fa-instagram"></i>
+                </span>
+            </div>
+          </div>
+          <!--INPUT USUARIO-REGISTRAR-->
+            <p>Não tem uma conta? <a href="https://codepen.io/marlon-lacio/pen/WNjdOwq" class="btnhover">Registrar</a></p>
+        </form>
+      <!--FINAL FORMULARIO DE LOGIN-->
+    </div>
+  <!--FINAL DO CONTEUDO DA PAGINA-->
+    <div style="text-align:center; background-color: var(--cor4);">
+      SITE DESENVOLVIDO POR MARLON LACIO
+    </div>
+<!--FINAL DA PAGINA-->
+    <script src="https://kit.fontawesome.com/d639a0fa5e.js" crossorigin="anonymous"></script>
+
+</body>
+    
+</html>
