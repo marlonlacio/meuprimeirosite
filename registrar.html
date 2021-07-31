@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<!--COMEÇO DA PAGINA-->
+  <!--COMEÇO DO CABEÇALHO DA PAGINA-->
+    <header class="cabecalho">
+      <!--COMEÇO DO MENU NO CABEÇALHO DA PAGINA-->
+        <nav>   
+        <!--COMEÇO DO BOTÃO DO LADO DIREITO NO MENU DO CABEÇALHO-->                
+            <a href="index.html">
+              <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
+              <span>
+                <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
+                <i class="fa fa-home"></i>
+              </span>
+            </a>
+        </nav>             
+        <!--LOGO NO CABEÇALHO DA PAGINA-->
+        <div id="logo-cabecalho" ></div>
+          Nome do site
+         </div>
+    </header>
+  <!--FINAL DO CABEÇALHO DA PAGINA-->
+              <!---->
+  <!--COMEÇO DO CONTEUDO DA PAGINA-->
+    <div id="conteudo">
+                <!--LOGO NO TOPO DO FORMULÁRIO--> 
+                <img src="https://cdn.pixabay.com/photo/2017/09/01/00/15/png-2702691_1280.png" alt="" class="logo-formulario" >
+      <!--COMEÇO DO FORMULARIO DE REGISTRO-->
+      <form action="POST" id="formulario">
+        <h1>Registrar</h1>
+        <div class="row">
+            <input autocomplete="name" type="text" id="name" placeholder="Nome completo" required>
+        </div>
+        <div class="row">
+            <input autocomplete="email" type="email" id="email" placeholder="Email" required>
+        </div>       
+        <div class="row">
+            <input autocomplete="address-line1" type="text" id="endereco" placeholder="Endereço" required>
+        </div>       
+        <div class="row">
+            <input autocomplete=" " type="text" id="cpf" placeholder="CPF">
+        </div>       
+        <div class="row">
+            <input autocomplete="" type="date" id="nascimento" placeholder="" style="color: var(--cor3);" required>
+        </div>       
+        <div class="row">
+            <input autocomplete="tel" type="tel" id="telefone" placeholder="Telefone" required>
+        </div>       
+        <div class="row">
+            <input autocomplete="username" type="text" id="login_username" placeholder="Login" required>
+        </div>       
+        <div class="row">
+            <input autocomplete="" type="password" id="login_username" placeholder="Senha" required>
+        </div>       
+        <button>
+            <input type="submit" value="Registrar" class="botao">
+            </input>
+        </button>
+      </form>
+      <!--FINAL FORMULARIO DE REGISTRO-->
+    </div>
+  <!--FINAL DO CONTEUDO DA PAGINA-->
+    <div style="text-align:center; background-color: var(--cor4);">
+      SITE DESENVOLVIDO POR MARLON LACIO
+    </div>
+<!--FINAL DA PAGINA-->
+    <script src="https://kit.fontawesome.com/d639a0fa5e.js" crossorigin="anonymous"></script>
+
+</body>
+    
+</html>
