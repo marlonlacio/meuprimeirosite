@@ -7,10 +7,10 @@
 :root {
     --font2:'WindSong', cursive;
     --font1:'Bodoni Moda', serif;
-    --cor1: #4A705B;
-    --cor2: #435963;
-    --cor3: #C6D5B4;
-    --cor4: #7F8D94;
+    --cor1: #0E5CAD;
+    --cor2: rgba(219, 214, 214,0.6);
+    --cor3: black;
+    --cor4: rgba(50, 113, 179, 0.2);
   }
 
 /*DECLARANDO PROPRIEDADES DA PAGINA*/
@@ -24,13 +24,165 @@ body{
 
 /*DECLARANDO PROPRIEDADES DO CABEÇALHO*/
 .cabecalho{
+    height: 8vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: var(--font2);
     font-size: x-large;
     background-color: var(--cor1);
     padding: 0.8rem;
     padding-bottom: 0px;
+}
+
+
+
+/*DECLARANDO PROPRIEDADES HOME*/
+.foto-home{
+  height: 22vh; 
+  width: 40vw; 
+  margin:  2vh auto;
+  background: url(imagens/imagem_marlon.png) center no-repeat;
+  background-size:contain;
+}
+
+.texto-home{
+  display: block;
+  height: 22vh; 
+  text-align: center; 
+  font-size: x-large; 
+  overflow: hidden;
+}
+
+/*BOXES-HOME*/
+.box-solido{
+  text-align: center; 
+  box-sizing: border-box; 
+  margin-top: 5vh; 
+  background-color: rgba(255,255,255,0.8); 
+  border-radius: 14px; box-shadow: 3px 3px 3px; 
+  padding: 2px;
+  padding-bottom: 10px;
+  width: 100%; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.texto-box{
+  font-size: large; 
+  width: fit-content; 
+  margin: auto; 
+  border-radius: 14px; 
+  padding: 0 4px; 
+  background: linear-gradient(to left, var(--cor1), var(--cor4));
+}
+
+/*DECLARANDO PROPRIEDADES MEUS-PROJETOS*/
+.meus-projetos-area{
+  height:48vh; 
+  display: flex; 
+  overflow-y: hidden; 
+  border-radius: 4px; 
+  align-items: center;
+}
+
+.projetos{
+  width: 100%; 
+  height: 100%; 
+  margin-top: 5vh;
+  font-size: large;
+}
+
+.projetos img, .projetos p{
+  height: 20%; 
+  margin: auto;
+  font-size: larger;
+}
+
+/*DECLARANDO PROPRIEDADES MEUS-HOBIES*/
+.meus-hobies{
+  text-align: center; 
+  box-sizing: border-box; 
+  margin-top: 5vh;
+}
+
+.meus-hobies-area{
+  height:36vh; 
+  display: flex; 
+  overflow-y: hidden;
+  align-items: center; 
+  padding: 2vh 0px; 
+  align-items: center;
+}
+
+.hobies{
+  height: 90%;
+  box-sizing: border-box; 
+  background-color: var(--cor4);
+  border-radius: 14px; 
+  margin-left: 12vw; 
+  padding: 0 25vw;
+}
+
+/*DECLARANDO PROPRIEDADES LPA*/
+.lpa-area{
+  width: 100%; 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin-top: 2vh;
+}
+
+.lp{
+  width: 40vw; 
+  height: 50vw; 
+  box-sizing: border-box; 
+  background: rgba(215, 215, 215,0.8); 
+  border-radius: 14px; 
+  display: flex;
+  margin-top:2vh;
+}
+
+.lp div{
+  align-items: center;
+  margin: auto;
+}
+
+.lp div img{
+  width: 80%;
+  margin: auto;
+}
+
+/*DECLARANDO PROPRIEDADES MINHAS REDES*/
+.minhas-redes{
+  text-align: center; 
+  box-sizing: border-box; 
+  margin-top: 5vh;
+}
+
+.minhas-redes-area{
+  height:36vh; 
+  display: flex; 
+  overflow-y: hidden; 
+  align-items: center;
+}
+
+.rede{
+  height: 50%; 
+  background: rgba(215, 215, 215,0.8); 
+  box-sizing: border-box; 
+  border-radius: 14px; 
+  margin-left: 25vw;
+  padding: 5vw 5vw;
+}
+
+.rede img{
+  height: 100%;
+}
+
+.rede:last-child{
+  margin-right: 25vw;
 }
 
 
@@ -114,7 +266,7 @@ button, .botao{
   font-size: large;
   margin: 1.5rem auto;
   background-color: rgba(127, 141, 148, 0.5);
-  border: 1px solid var(--cor3);
+  
   border-radius:4px;
 }
 /*DECLARANDO PROPRIEDADES DO TEXTO DENTRO BOX LOGAR COM REDES*/
@@ -141,6 +293,7 @@ footer{
   display: flex; 
   padding: 0 2%;
   align-items: center;
+  margin-top: 1rem;
 }
 
 /*DECLARANDO PROPRIEDADES DOS ICONES DENTRO BOX LOGAR COM REDES*/
@@ -157,6 +310,8 @@ footer{
   color:var(--cor1);
 }
 
+
+/*DECLARANDO PROPRIEDADES PARA TELAS MAIORES QUE 820PX*/
 @media(min-width:820px){
   .logo-formulario{
     margin:auto;
@@ -176,8 +331,8 @@ footer{
   .cabecalho{
     justify-content: space-evenly;
 }
-    
-      footer{
+
+  footer{
   justify-content: space-evenly;
 }
 
