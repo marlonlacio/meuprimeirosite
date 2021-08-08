@@ -72,10 +72,11 @@ body{
 .texto-box{
   font-size: large; 
   width: fit-content; 
-  margin: auto; 
+  margin: 0 auto; 
   border-radius: 14px; 
   padding: 0 4px; 
   background: linear-gradient(to left, var(--cor1), var(--cor4));
+  display: block;
 }
 
 /*DECLARANDO PROPRIEDADES MEUS-PROJETOS*/
@@ -126,13 +127,6 @@ body{
 }
 
 /*DECLARANDO PROPRIEDADES LPA*/
-.lpa-area{
-  width: 100%; 
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-around; 
-  margin-top: 2vh;
-}
 
 .lp{
   width: 40vw; 
@@ -152,6 +146,14 @@ body{
 .lp div img{
   width: 80%;
   margin: auto;
+}
+
+.lpa{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;  
+  justify-content: space-around; 
+  margin-top: 2vh;
 }
 
 /*DECLARANDO PROPRIEDADES MINHAS REDES*/
