@@ -26,14 +26,33 @@
           Meu primeiro site
          </div>
     </header>
+
+    <div style="width: 100vw; background-color: var(--cor1); overflow: auto; box-sizing: border-box; display: flex; text-align: left; white-space: nowrap; padding: 1vw 0; font-size: small;">
+      <span style="border-right: 1px solid black; padding: 0 2vw;">Meus projetos</span>
+      <span style="border-right: 1px solid black; padding: 0 2vw;">Meus hobbies</span>
+      <span style="border-right: 1px solid black; padding: 0 2vw;">Skills</span>
+      <span style="border-right: 1px solid black; padding: 0 2vw;">Minhas redes</span>
+      <span style="border-right: 1px solid black; padding: 0 2vw;">Contato</span>
+      <span style="border-right: 1px solid black; padding: 0 2vw;">Doar</span>
+    </div>
   <!--FINAL DO CABEÇALHO DA PAGINA-->
               <!---->
   <!--COMEÇO DO CONTEUDO DA PAGINA-->
     <div id="conteudo-1">
       <!--TEXTO NO TOPO DA PAGINA-->
-        <div class="texto-home">Olá, seja bem vindo ao meu primeiro site. Meu projeto para desenvolver minhas habilidades em HTML e CSS.</div>
+        <div class="texto-home" style="margin-top: 1vh;">Olá, seja bem vindo ao meu primeiro site. Meu projeto para desenvolver minhas habilidades em HTML e CSS.</div>
       <!--FOTO NO COMEÇO DA PAGINA-->
         <div class="foto-home">
+        </div>
+        <div style="text-align: center; margin: auto; width: fit-content;">
+          <span style="border-right: 1px solid black;">
+            <i class="far fa-envelope"></i>
+          </span>
+          <span style="margin-left: 1vw;">Contato</span><br>
+          marlonlaciobr@gmail.com 
+          <br>
+          <br>          
+           <a href="https://www.buymeacoffee.com/marlonlacio" target="_blank" style="text-decoration: none;border: 1px solid black; border-radius: 4px; padding: 0 1vw;">me pague um café <i class="fas fa-hand-holding-usd"></i></a>
         </div>
       <!-- CAIXA DO MEUS PROJETOS-->
         <section class="box-solido">
@@ -41,23 +60,24 @@
           <div class="texto-box">Meus projetos</div>
         <!--AREA DOS PROJETOS-->
           <div class="meus-projetos-area">
-            <!--PROJETOS-->
-            <div class="projetos">
-              <img src="imagens/batalha-da-ilha-logo.png" alt="">Batalha da Ilha
+            <!--PROJETOS-->           
+            <div class="projetos" style="background:url(imagens/fundo_batalha-da-ilha.jpg); background-size: cover; color: white;">
+              <img src="imagens/batalha-da-ilha-logo.png" alt=""><span style="font-size: x-large; background-color: rgba(0, 0, 0, 0.3);">Batalha da Ilha</span>
               <p> É um projeto voltado a cultura hip hop, uma batalha de rima que eu e meus amigos realizamos no nosso bairro com o patrocínio de alguns comércios locais, para incentivar e divulgar a cultura hip hop local.
               </p> 
             </div>
+
           </div>              
         </section>
       <!-- CAIXA DO MEUS HOBBIES-->
         <section class="meus-hobies">
           <!--TEXTO MEUS HOBBIES-->
-          <div class="texto-box">Meu hobbies</div>
+          <div class="texto-box">Meus hobbies</div>
           <!--AREA DOS HOBBIES-->
           <div class="meus-hobies-area">
             <!--HOBBIES-->
-            <div class="hobies" style="background: url(imagens/tatuagem_marlondrawin.jpg) center no-repeat; background-size: cover;"> 
-              <a href="">Tatuar</a>
+            <div class="hobies" style="background: url(imagens/tatuagem_marlondrawin.jpg) center no-repeat; background-size: cover; box-sizing: border-box;">
+              <a class="" href="">Tatuar</a>
             </div>  
             <div  class="hobies" style="background: url(imagens/desenho_marlondrawin.jpg) center no-repeat; background-size: cover;"> 
               <a href="">Desenhar</a>
