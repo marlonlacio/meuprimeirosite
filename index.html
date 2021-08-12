@@ -11,20 +11,28 @@
 <!--COMEÇO DA PAGINA-->
   <!--COMEÇO DO CABEÇALHO DA PAGINA-->
     <header class="cabecalho">
-        <nav>   
-        <!--BOTÃO DO LADO DIREITO DO CABEÇALHO-->                
+        <nav>
+            <!--BOTÃO DO LADO DIREITO DO CABEÇALHO-->                
             <a href="#">
-              <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
-              <span>
+            <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
+            <span>
                 <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
                 <i class="fa fa-home"></i>
-              </span>
-            </a>
-        </nav>             
+            </span>
+            </a>           
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="login.html">Tela de login</a></li>
+            <li><a href="registrar.html">Tela de registro</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </nav>                        
         <!--LOGO NO CABEÇALHO DA PAGINA-->
-        <div id="logo-cabecalho" ></div>
-          Meu primeiro site
-         </div>
     </header>
 
     <div style="width: 100vw; background-color: var(--cor1); overflow: auto; box-sizing: border-box; display: flex; text-align: left; white-space: nowrap; padding: 1vw 0; font-size: small;">
@@ -142,8 +150,16 @@
   <!--FINAL DO CONTEUDO DA PAGINA-->
   <!--COMEÇO DO RODAPÉ-->
     <footer>
-      <span style="font-size:smaller">SITE DESENVOLVIDO POR MARLON LACIO</span>
       <div>
+        <ul>
+          <li>Sobre mim</li>
+          <li>Redes sociais</li>
+          <li>Contato</li>
+          <li>Serviços</li>
+        </ul>
+      </div>
+      <div class="rodape">
+        <span>SITE DESENVOLVIDO POR MARLON LACIO</span>
         <a href="https://github.com/marlonlacio" target="_blank" style="margin-right: 0.2rem;"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/marlonlacio/" target="_blank" style="margin-right: 0.2rem;"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://www.instagram.com/marlonlacio/" target="_blank"><i class="fab fa-instagram"></i></a>
