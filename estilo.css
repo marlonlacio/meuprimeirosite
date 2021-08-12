@@ -14,7 +14,15 @@
     --cor2: rgba(219, 214, 214,0.6);
     --cor3: black;
     --cor4: rgba(50, 113, 179, 0.2);
-  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 
 /*DECLARANDO PROPRIEDADES DA PAGINA*/
 body{
@@ -38,6 +46,12 @@ body{
     padding-bottom: 0px;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 
 
 /*DECLARANDO PROPRIEDADES HOME*/
@@ -155,8 +169,8 @@ body{
 /*DECLARANDO PROPRIEDADES LPA*/
 
 .lp{
-  width: 40vw; 
-  height: 50vw; 
+  width: 20vw; 
+  height: 30vw; 
   box-sizing: border-box; 
   background: rgba(215, 215, 215,0.8); 
   border-radius: 14px; 
@@ -315,13 +329,27 @@ button, .botao{
   color:var(--cor2);
 }
 /*DECLARANDO PROPRIEDADES DO RODAPÉ*/
-footer{
-  justify-content: space-between; 
-  background-color: var(--cor4); 
+.rodape{
+  background-color: var(--cor1); 
   display: flex; 
-  padding: 0 2%;
+  padding: 0%;
   align-items: center;
-  margin-top: 1rem;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+footer{
+  background-color: black; 
+  width: 100%; 
+  color: rgb(155, 155, 155); 
+  font-size: small; 
+  margin: 0%;
+}
+
+footer ul{
+  list-style: none; 
+  columns: 2; 
+  width: 90%;
 }
 
 /*DECLARANDO PROPRIEDADES DOS ICONES DENTRO BOX LOGAR COM REDES*/
@@ -336,6 +364,61 @@ footer{
 .icons-redes>span:hover{
   cursor:pointer;
   color:var(--cor1);
+}
+.cabecalho{
+  font-family: var(--font3);
+}
+
+.cabecalho nav ul li{
+  display: inline-block;
+}
+
+.cabecalho nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.cabecalho ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: var(--cor3);
+  top: 8vh;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+
+.cabecalho a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.cabecalho .checkbtn{
+  color: black;
+  float: right;
+  cursor: pointer;
+}
+
+.cabecalho #check{
+  display: none;
+}
+
+.cabecalho nav ul li{
+  display: block;
+  margin: 4vh 0;
+}
+
+.cabecalho a:hover,a.active{
+  background: none;
+  color: #0082e6;
+}
+
+.cabecalho #check:checked ~ ul{
+  left: 0;
 }
 
 
@@ -367,4 +450,6 @@ footer{
   footer a{
     font-size: x-large;
   }
+
 }
+
