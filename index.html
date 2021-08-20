@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro site</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="imagens/sitelogo.png" type="image/x-icon">
 </head>
-
-
 <body>
 <!--COMEÇO DA PAGINA-->
   <!--COMEÇO DO CABEÇALHO DA PAGINA-->
@@ -29,9 +28,9 @@
           </label>
           <ul class="">
             <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#">Tela de login</a></li>
-            <li><a href="#">Tela de registro</a></li>
             <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Meu curriculo</a></li>
+            <li><a href="#">Porfólio</a></li>
           </ul>
         </nav>                        
     </header>
@@ -39,12 +38,11 @@
     <!--INDICE-->
     <div class="indice" >
       <ul>
-          <li><span>Meus projetos</span></li>
-          <li><span>Meus hobbies</span></li>
-          <li><span>Skills</span></li>
-          <li><span>Minhas redes</span></li>
-          <li><span>Contato</span></li>
-          <li><span>Doar</span></li>
+          <li><label for="project"><span>Meus projetos</span></label></li>
+          <li><label for="hobiesbox"><span>Meus hobbies</span></label></li>
+          <li><label for="lpa"><span>Skills</span></label></li>
+          <li><span><label for="redes">Minhas redes</span></label></li>
+          <li><label for="doar"><span>Doar</span></label></li>
       </ul>
     </div>
   <!--FINAL DO CABEÇALHO DA PAGINA-->
@@ -65,7 +63,8 @@
           marlonlaciobr@gmail.com 
           <br>
           <br>          
-           <a href="https://www.buymeacoffee.com/marlonlacio" target="_blank" class="buyme">me pague um café <i class="fas fa-hand-holding-usd"></i></a>
+           <a href="https://www.buymeacoffee.com/marlonlacio" target="_blank" class="buyme"> me pague um café <i class="fas fa-hand-holding-usd"></i></a>
+           <input type="radio" id="doar" name="fav_language" value="doar" style="width: 0%; height: 0%;">
         </div>
         </div>
 
@@ -81,9 +80,12 @@
           <div class="areaproj">
             <!--PROJETOS-->           
             <div class="" style="background:url(imagens/fundo_batalha-da-ilha.jpg); background-size: cover; color: white; padding: 0vh 0vh 2vh 2vh;">
+              <input type="radio" id="project" name="fav_language" value="project" style="width: 0%; height: 0%;">
               <img src="imagens/batalha-da-ilha-logo.png" alt="" width="20%"><span style="font-size: x-large; background-color: rgba(0, 0, 0, 0.3);">Batalha da Ilha</span>
               <p> É um projeto voltado a cultura hip hop, uma batalha de rima que eu e meus amigos realizamos no nosso bairro com o patrocínio de alguns comércios locais, para incentivar e divulgar a cultura hip hop local.
               </p> 
+              <a href="https://www.facebook.com/BATALHADOVALA/" style="color: white;" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/batalhadovala/" style="color: white;" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
           </div>              
         </section>
@@ -94,15 +96,19 @@
           <div class="nomeproj" >Meus hobbies</div>
           <!--AREA DOS HOBBIES-->
           <div class="hobies">
+            <input type="radio" id="hobiesbox" name="fav_language" value="hobiesbox" style="width: 0%; height: 0%;">
             <!--HOBBIES-->
             <div class="fita" style="background: url(imagens/tatuagem_marlondrawin.jpg) center no-repeat; background-size: cover;">
-              <a class="link" href="">Tatuar</a>
+              <a class="link" href="https://www.instagram.com/marlondrawin/" target="_blank">Tatuar</a>
+              <div style="display: flex; margin-bottom: 2px;">
+               
+              </div>
             </div>  
             <div  class="fita" style="background: url(imagens/desenho_marlondrawin.jpg) center no-repeat; background-size: cover;"> 
-              <a class="link" href="">Desenhar</a>
+              <a class="link" href="https://www.instagram.com/marlondrawin/" target="_blank">Desenhar</a>
             </div>
             <div  class="fita" style="background: url(imagens/leitura.jpg) center no-repeat; background-size: cover;">  
-              <a class="link" href="">Ler</a>
+              <a class="link" href="https://www.instagram.com/stories/highlights/17993693599086922/" target="_blank">Ler</a>
             </div>      
           </div>
         </section>
@@ -113,6 +119,7 @@
           <div class="nomeproj">
             Conhecimento em:
           </div>
+          <input type="radio" id="lpa" name="fav_language" value="lpa" style="width: 0%; height: 0%;">
           <div class="objetos">
             <!--LINGUAGEM DE PROGRAMAÇÃO APRENDIDAS-->
             <div class="card">
@@ -146,18 +153,25 @@
         <!--TEXTO MINHAS REDES-->
           <div class="nomeproj">Minhas redes</div>
           <!--AREA MINHAS REDES-->
+          <input type="radio" id="redes" name="fav_language" value="redes" style="width: 0%; height: 0%;">
           <div class="objetos">
             <!--REDE-->
             <div class="rede">
-              <img src="imagens/icone-linkedin.png">
+              <a href="https://br.linkedin.com/in/marlonlacio" target="_blank">
+                <img src="imagens/icone-linkedin.png">
+              </a>
             </div>
             <!--REDE-->
             <div class="rede">
+              <a href="https://github.com/marlonlacio" target="_blank">
               <img src="imagens/icone-github.png">
+              </a>
             </div>
             <!--REDE-->
             <div class="rede ut">
+              <a href="https://instagram.com/marlonlacio" target="_blank">
               <img src="imagens/icone-instagram.png">
+              </a>
             </div>
           </div>
         </section>
@@ -175,11 +189,11 @@
           <li>Serviços</li>
         </ul>
       </div>
-      <div style="text-align: center;">
+      <div style="text-align: center; ">
         <span>SITE DESENVOLVIDO POR MARLON LACIO</span>
-        <a href="https://github.com/marlonlacio" target="_blank" style="margin-right: 0.2rem;"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/marlonlacio/" target="_blank" style="margin-right: 0.2rem;"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/marlonlacio/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/marlonlacio" target="_blank" style="margin-right: 0.2rem;color: white;" ><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/marlonlacio/" target="_blank" style="margin-right: 0.2rem;color: white;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/marlonlacio/" style="color: white;" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </footer>
     <!--FINAL DO RODAPÉ-->
