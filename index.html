@@ -14,12 +14,8 @@
     <header class="cabecalho">
         <nav>
             <!--BOTÃO DO LADO DIREITO DO CABEÇALHO-->                
-            <a href="index.html">
+            <a href="index.html"> <img src="imagens/sitelogo.png" style="height: 5vh;" alt="">
             <!--ICONE DO BOTÃO USANDO FONTAWESOME-->
-            <span>
-                <!--CLASSE DO ICONE POR MEIO DO FONTAWESOME-->
-                <i class="fa fa-home"></i>
-            </span>
             </a>
             <!--MENU NO CABEÇALHO DA PAGINA-->           
           <input type="checkbox" id="check" >
@@ -28,7 +24,7 @@
           </label>
           <ul class="">
             <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#">Sobre mim</a></li>
+            <li><a href="sobremim.html">Sobre mim</a></li>
             <li><a href="https://github.com/marlonlacio/meuprimeirosite/raw/main/imagens/Marlon_Lacio_Curr%C3%ADculo.pdf">Meu curriculo</a></li>
             <li><a href="#">Portfólio</a></li>
           </ul>
@@ -38,6 +34,7 @@
     <!--INDICE-->
     <div class="indice" >
       <ul>
+          <li><label for="portfoliobox"><span>Meu portfólio</span></label></li>
           <li><label for="project"><span>Meus projetos</span></label></li>
           <li><label for="hobiesbox"><span>Meus hobbies</span></label></li>
           <li><label for="lpa"><span>Skills</span></label></li>
@@ -77,6 +74,29 @@
         <!--COMEÇO DO CONTEUDO-->
         <div class="pagina">
 
+              <!-- CAIXA DO MEUS PORTFÓLIOS-->
+              <section class="conteudo">
+                <!--TEXTO MEUS PORTFÓLIOS-->
+                <div class="nomeproj" >Meu portfólio</div>
+                <!--AREA DOS PORTFÓLIOS-->
+                <div class="hobies">
+                  <input type="radio" id="portfoliobox" name="fav_language" value="hobiesbox" style="width: 0%; height: 0%;">
+                  <!--PORTFÓLIOS-->
+                  <div  class="fita" style="background: url(imagens/sitebatalhadailha.png) center no-repeat; background-size: cover;">  
+                    <a class="link" href="https://batalhadailha.vercel.app/" target="_blank">Site batalha da ilha</a>
+                  </div>
+                  <div  class="fita" style="background: url(imagens/calculadora.png) center no-repeat; background-size: cover;"> 
+                    <a class="link" href="https://meusjavascripts.vercel.app/calculadora.html" target="_blank">Calculadora</a>
+                  </div>
+                  <div  class="fita" style="background: url(imagens/opmat.png) center no-repeat; background-size: cover;"> 
+                    <a class="link" href="https://meusjavascripts.vercel.app/" target="_blank">Operações matemática</a>
+                  </div>     
+                  <div  class="fita" style="background: url(imagens/sitelogo.png) center no-repeat; background-size: cover;"> 
+                    <a class="link" href="https://meuprimeirosite.vercel.app/" target="_blank">Meu primeiro site</a>
+                  </div> 
+                </div>
+              </section>
+
       <!-- CAIXA DO MEUS PROJETOS-->
         <section class="conteudo">
         <!--TEXTO MEUS PROJETOS-->  
@@ -105,8 +125,7 @@
             <!--HOBBIES-->
             <div class="fita" style="background: url(imagens/tatuagem_marlondrawin.jpg) center no-repeat; background-size: cover;">
               <a class="link" href="https://www.instagram.com/marlondrawin/" target="_blank">Tatuar</a>
-              <div style="display: flex; margin-bottom: 2px;">
-               
+              <div style="display: flex; margin-bottom: 2px;">     
               </div>
             </div>  
             <div  class="fita" style="background: url(imagens/desenho_marlondrawin.jpg) center no-repeat; background-size: cover;"> 
@@ -127,11 +146,16 @@
           <input type="radio" id="lpa" name="fav_language" value="lpa" style="width: 0%; height: 0%;">
           <div class="objetos">
             <!--LINGUAGEM DE PROGRAMAÇÃO APRENDIDAS-->
+            <div class="card" >
+              <div>
+                <img src="imagens/icone-js.png" alt="" style="width: 70%;"> javascript               
+              </div>
+          </div>
             <div class="card">
                 <div>
                   <img src="imagens/icone-css.png" alt="" style="width: 70%;">
                   <br>
-                  CSS
+                  css
                 </div>
             </div>
             
@@ -139,15 +163,15 @@
               <div>
                 <img src="imagens/icone-html.png" alt="" style="width: 70%;">
                 <br>
-                HTML
+                html
               </div>
             </div>
             
-            <div class="card ut">
+            <div class="card">
               <div>
                 <img src="imagens/icone-python.png" alt=""style="width: 70%;">
                 <br>
-                PYTHON
+                python
               </div>
             </div>
           </div>                        
