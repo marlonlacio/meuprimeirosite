@@ -29,7 +29,6 @@ body{
     padding:0px;
     font-family: var(--font1);
     background-color: var(--cor2);
-    max-width: 1000px;
 }
 
 /*DECLARANDO PROPRIEDADES DO CABEÇALHO*/
