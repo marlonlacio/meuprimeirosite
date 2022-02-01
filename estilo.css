@@ -269,6 +269,36 @@ footer ul{
   font-size: large;
 }
 
+.textodestaque{
+  border-radius: 1vh;
+  font-weight: lighter;
+  font-size: large;
+  box-sizing: border-box;
+  text-align: center;
+  width: 70vw;
+  height: 10vh;
+}
+
+.links2{
+  background-color: rgba(168,168,168, 0.4);
+  border-radius: 1vh;
+  font-weight: bolder;
+  box-sizing: border-box;
+  padding: 3vh;
+  margin: 2vh 0;
+  text-align: center;
+  width: 70vw;
+  height: 10vh;
+  border: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+.links2:hover{
+  background-color: rgb(168,168,168);
+  border: 1px solid rgba(255, 0, 0);
+  font-weight: 100;
+}
+
+
 /*PROPRIEDADES PARA CELULARES*/
 @media (max-width:820px){
   nav{
